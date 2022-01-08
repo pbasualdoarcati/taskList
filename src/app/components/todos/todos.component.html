@@ -7,6 +7,6 @@
   <div class="todo {{(todo.completed ? 'done' :'')}}" *ngFor="let todo of todos, let i = index;">
     <div class="id">{{i}}</div>
     <div class="content" (click)="toggleDone(i)">{{todo.content}}</div>
-    <button class="delete" (click)="deleteTodo(i)">Eliminar</button>
+    <button class="delete" (click)="deleteTodo(i)"><img src="./../../../assets/images/delete-button.svg" alt=""></button>
   </div>
 </div>
