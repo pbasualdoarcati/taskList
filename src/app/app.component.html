@@ -1,13 +1,6 @@
-<h1>Task List</h1>
-<h4>Con boton para agregar y eliminar tareas</h4>
-<input type="text" class="inputTask" placeholder="Ingrese aquí su nueva tarea" #task>
-<br>
-<br>
-<button class="addTask" (click)="addTask(task.value)">Nueva Tarea</button>
-<br>
-<br>
-<ul *ngFor="let item of list">
-  <li>
-    {{item.name}}<button class="deleteTask btn- btn-danger" (click)="removeTask(item.id)">Borrar</button>
-  </li>
-</ul>
+<div class="app">
+  <header>
+    <h1>Lista de tareas</h1>
+  </header>
+  <app-todos></app-todos>
+</div>
